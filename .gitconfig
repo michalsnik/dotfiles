@@ -1,0 +1,9 @@
+[user]
+	name = Michał Sajnóg
+	email = michal.sajnog@hotmail.com
+[push]
+	default = simple
+[core]
+	editor = /usr/bin/vim
+[init]
+	templatedir = ~/.git-templates
