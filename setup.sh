@@ -2,7 +2,7 @@
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .vimrc .gitconfig"
+files=".bashrc .zshrc .gitconfig .git-templates"
 
 ##########
 
@@ -26,4 +26,3 @@ done
 
 source ~/.bashrc
 source ~/.zshrc
-source ~/.vimrc
