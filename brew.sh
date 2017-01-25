@@ -21,3 +21,4 @@ brew cask install postgres
 brew cask install utorrent
 brew cask install visual-studio-code
 brew cask install nylas-mail
+brew cask install boom
