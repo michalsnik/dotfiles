@@ -20,10 +20,23 @@ echo "...done"
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 for file in $files; do
-    echo "Moving any existing dotfiles from ~ to $olddir"
-    mv ~/$file $olddir/
-    echo "Creating symlink to $file in home directory."
-    ln -s $dir/$file ~/$file
+  echo "Moving any existing dotfiles from ~ to $olddir"
+  mv ~/$file $olddir/
+  echo "Creating symlink to $file in home directory."
+  ln -s $dir/$file ~/$file
+done
+
+vscfiles="keybindings.json settings.json"
+vscdir="$HOME/Library/Application Support/Code/User"
+
+for file in $vscfiles; do
+  echo "---------------------------------------------"
+  echo "---> Creating backup of VSC's settings"
+  mv "$vscdir/$file" "$vscdir/_$file"
+  echo "---------------------------------------------"
+  echo "---> Creating symlink to vsc/$file in $vscdir"
+  ln -s "$dir/vsc/$file" "$vscdir"
+  echo "---------------------------------------------"
 done
 
 source ~/.bashrc
