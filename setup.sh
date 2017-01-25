@@ -26,6 +26,7 @@ for file in $files; do
   ln -s $dir/$file ~/$file
 done
 
+# Sync vsc settings
 vscfiles="keybindings.json settings.json"
 vscdir="$HOME/Library/Application Support/Code/User"
 
