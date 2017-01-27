@@ -4,7 +4,7 @@ git pull origin master;
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .gitconfig .git-templates"
+files=".bashrc .zshrc .gitconfig .git-templates .hyper.js"
 
 ##########
 

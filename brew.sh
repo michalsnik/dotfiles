@@ -8,6 +8,8 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+brew install rbenv
+
 brew cask install hyper
 brew cask install iterm2
 brew cask install postgres
