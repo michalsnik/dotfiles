@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-export ZSH_THEME="robbyrussell"
+export ZSH_THEME="snik"
 
 plugins=(brew)
 
@@ -23,6 +23,10 @@ alias ga="git add"
 alias gc="git commit"
 alias gd="git diff"
 alias gdc="git diff --cached"
+alias gp="git push"
+alias gpl="git pull"
+
+export EDITOR=vim
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin

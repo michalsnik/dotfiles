@@ -4,7 +4,7 @@ git pull origin master;
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .gitconfig .git-templates .hyper.js"
+files=".bashrc .zshrc .gitconfig .git-templates .hyper.js .zprofile"
 
 ##########
 
@@ -39,6 +39,8 @@ for file in $vscfiles; do
   ln -s "$dir/vsc/$file" "$vscdir"
   echo "---------------------------------------------"
 done
+
+ln -s $dir/ohmyzsh/snik.zsh-theme ~/.oh-my-zsh/custom/themes/snik.zsh-theme
 
 source ~/.bashrc
 source ~/.zshrc
