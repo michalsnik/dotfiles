@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-export ZSH_THEME="snik"
+export ZSH_THEME="pure"
 
 plugins=(brew)
 
@@ -29,11 +29,16 @@ alias gpl="git pull"
 
 export EDITOR=vim
 
+export PURE_PROMPT_SYMBOL="᚛" # ❯, ∆
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PATH=$PATH:$HOME/.rbenv/bin
 export PATH=$PATH:$HOME/.rbenv/shims
 export PATH=$PATH:`yarn global bin`
+
+export NVM_DIR="/Users/snik/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 eval "$(rbenv init -)"

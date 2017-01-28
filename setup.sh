@@ -40,8 +40,11 @@ for file in $vscfiles; do
   echo "---------------------------------------------"
 done
 
+# set rights on ~/bin
 chmod 777 -R $dir/bin
-ln -s $dir/ohmyzsh/snik.zsh-theme ~/.oh-my-zsh/custom/themes/snik.zsh-theme
 
-source ~/.bashrc
+# symlink ohmyzsh folder
+mv custom _old_custom
+ln -s $dir/ohmyzsh ~/.oh-my-zsh/custom
+
 source ~/.zshrc
