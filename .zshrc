@@ -17,6 +17,7 @@ alias hosts="sudo vim /etc/hosts"
 alias zsh="vim ~/.zshrc"
 alias hyper="vim ~/.hyper.js"
 alias refresh="source ~/.zshrc"
+alias sshkey="pbcopy < ~/.ssh/id_rsa.pub && cat ~/.ssh/id_rsa.pub"
 
 alias gst="git status"
 alias ga="git add"
