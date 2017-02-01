@@ -74,8 +74,8 @@ module.exports = {
     },
 
     keymap: {
-      'CmdOrCtrl+Shift+Left':  'prev-pane',
-      'CmdOrCtrl+Shift+Right': 'next-pane',
+      'Cmd+Ctrl+[': 'prev-pane',
+      'Cmd+Ctrl+]': 'next-pane',
     },
   },
 

@@ -1,10 +1,12 @@
+#!/usr/bin/env bash
+
 git pull origin master;
 
 ########## Variables
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .gitconfig .git-templates .hyper.js .zprofile bin"
+files=".bashrc .zshrc .vimrc .gitconfig .git-templates .hyper.js .zprofile bin"
 
 ##########
 
@@ -47,4 +49,5 @@ chmod 777 -R $dir/bin
 mv custom _old_custom
 ln -s $dir/ohmyzsh ~/.oh-my-zsh/custom
 
+source ~/.bashrc
 source ~/.zshrc

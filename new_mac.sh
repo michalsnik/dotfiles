@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Set MacBook name
 sudo scutil --set HostName "mbpro-snik"
 

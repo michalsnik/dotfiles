@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
-# Install command-line tools using Homebrew.
-
 # Make sure we’re using the latest Homebrew.
 brew update
 
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Install command-line tools using Homebrew.
 brew install rbenv
+brew install tmux
+
+brew install watchman
 
 brew cask install hyper
 brew cask install iterm2
