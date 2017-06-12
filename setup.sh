@@ -6,7 +6,7 @@ git pull origin master;
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .vimrc .gitconfig .git-templates .hyper.js .zprofile bin"
+files=".bashrc .zshrc .gitconfig .git-templates .zprofile .hyper.js"
 
 ##########
 
@@ -28,25 +28,11 @@ for file in $files; do
   ln -s $dir/$file ~/$file
 done
 
-# Sync vsc settings
-vscfiles="keybindings.json settings.json"
-vscdir="$HOME/Library/Application Support/Code/User"
-
-for file in $vscfiles; do
-  echo "---------------------------------------------"
-  echo "---> Creating backup of VSC's settings"
-  mv "$vscdir/$file" "$vscdir/_$file"
-  echo "---------------------------------------------"
-  echo "---> Creating symlink to vsc/$file in $vscdir"
-  ln -s "$dir/vsc/$file" "$vscdir"
-  echo "---------------------------------------------"
-done
-
 # set rights on ~/bin
 chmod 777 -R $dir/bin
 
 # symlink ohmyzsh folder
-mv custom _old_custom
+mv ~/.oh-my-zsh/custom ~/.oh-my-zsh/_custom
 ln -s $dir/ohmyzsh ~/.oh-my-zsh/custom
 
 source ~/.bashrc

@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 export ZSH_THEME="pure"
 
-plugins=(brew)
+plugins=(brew, zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,13 +32,16 @@ export EDITOR=vim
 export PURE_PROMPT_SYMBOL="᚛" # ❯, ∆
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-#export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PATH=$PATH:$HOME/.rbenv/bin
 export PATH=$PATH:$HOME/.rbenv/shims
 export PATH=$PATH:`yarn global bin`
 
-export NVM_DIR="/Users/snik/.nvm"
+export NVM_DIR="/Users/michalsnik/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 eval "$(rbenv init -)"
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
