@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-export ZSH_THEME="pure"
+export ZSH_THEME="refined"
 
 plugins=(brew, zsh-autosuggestions, async)
 
@@ -47,5 +47,7 @@ export NVM_DIR="/Users/michalsnik/.nvm"
 eval "$(rbenv init -)"
 
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh

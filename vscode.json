@@ -1,0 +1,22 @@
+{
+    "workbench.colorTheme": "Cobalt2",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": false,
+    "workbench.iconTheme": "ayu",
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.tabCompletion": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.snippetSuggestions": "top",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue",
+        "vue-html"
+    ],
+    "vetur.validation.template": false,
+    "window.zoomLevel": 0,
+    "workbench.editor.enablePreview": false,
+    "explorer.confirmDragAndDrop": false
+}
