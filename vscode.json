@@ -1,10 +1,10 @@
 {
-    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorTheme": "Ayu Mirage",
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": false,
     "workbench.iconTheme": "ayu",
-    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "'Roboto Mono Light for Powerline', Monaco, Menlo, 'Courier New', monospace",
     "editor.tabCompletion": true,
     "editor.smoothScrolling": true,
     "editor.cursorBlinking": "smooth",
@@ -12,11 +12,44 @@
     "eslint.validate": [
         "javascript",
         "javascriptreact",
-        "vue",
-        "vue-html"
+        { "language": "vue", "autoFix": true },
+        { "language": "vue-html", "autoFix": true }
     ],
+    "eslint.packageManager": "yarn",
     "vetur.validation.template": false,
     "window.zoomLevel": 0,
     "workbench.editor.enablePreview": false,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "emmet.includeLanguages": {
+        "vue-html": "html"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "explorer.openEditors.visible": 0,
+    "terminal.explorerKind": "external",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "gitlens.codeLens.scopes": [
+        "containers",
+        "document"
+    ],
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "scss.validate": false,
+    "gitlens.historyExplorer.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "typescript.validate.enable": false,
+    "vetur.validation.script": false,
+    "eslint.alwaysShowStatus": true,
+    "files.autoSave": "off",
+    "editor.renderWhitespace": "all",
+    "eslint.autoFixOnSave": true,
 }

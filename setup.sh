@@ -6,7 +6,7 @@ git pull origin master;
 
 dir=~/.dotfiles
 olddir=~/.dotfiles_old
-files=".bashrc .zshrc .gitconfig .zprofile"
+files=".bashrc .zshrc .gitconfig .zprofile .hyper.js"
 
 ##########
 

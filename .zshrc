@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 
-export ZSH_THEME="refined"
+export ZSH_THEME="spaceship"
 
 plugins=(brew, zsh-autosuggestions, async)
 
@@ -10,6 +10,7 @@ alias dot="cd  ~/.dotfiles"
 
 alias ll="ls -l"
 alias lsa="ls -la"
+alias vsc="code-insiders"
 
 alias subl="open -a 'sublime text'"
 
@@ -38,7 +39,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 export PATH=$PATH:$HOME/.rbenv/bin
 export PATH=$PATH:$HOME/.rbenv/shims
-export PATH=$PATH:`yarn global bin`
 export PATH=$PATH:/usr/local/opt/qt/bin
 
 export NVM_DIR="/Users/michalsnik/.nvm"
@@ -51,3 +51,4 @@ eval "$(rbenv init -)"
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+export PATH="$PATH:$HOME/.rvm/bin"
